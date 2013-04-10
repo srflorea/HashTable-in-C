@@ -1,0 +1,25 @@
+In acest proiect am implementat un hashtable(o structura de date ce retine
+elementele intr-un vector indexat). Pentru implementarea structurii de 
+date hashtable am folosit doua structuri, una ce reprezinta un nod
+in hashtable cu doua campuri: "word"(elementul propriu-zis al nodului) si
+un pointer "next" catre urmatorul nod sau null daca este ultimul element.
+Cea de-a doua structura reprezinta hashtablelul si contine un camp "size"
+cu dimensiunea vectorului de bucketuri si vectorul de bucketuri. Un bucket
+este o lista simplu inlantuita cu elemente de tipul primei structuri. 
+Pentru accesarea unui anumit bucket se foloseste functia "hash" oferita 
+in sursele temei, functie ce pentru un anumit cuvant intoarce indexul unde
+se afla, sau ar trebui sa se afle in vectorul de bucketuri.
+Programul primeste ca parametru obligatoriu numarul de bucketuri si optional
+fisiere de input. Daca nu se vor primi fisiere de input, implicit se va
+astepta date de intrare de la tastatura. Se apeleaza metoda "read_and_parse"
+care va citi cate o linie si o va parsa, astfel putand apela functiile 
+corespunzatoare comenzii.
+Functionalitatea fiecarei functii in parte este detaliata in comentariile
+din cod. Comentariile sunt in engleza. Am optat pentru aceasta varianta
+pentru a putea pune tema pe git.
+Arhiva contine fisierul makefile specific fiecarui sistem de operare: pe
+Linux: GNUmakefile, pe Windows: Makefile, fisierele sursa: tema0.c, hash.c,
+fisierele header in care se afla declarate antetele functiilor: tema0.h 
+ce contine antetele functiilor ce ne-au fost cerute spre a fi implementate
+si aux_func.h ce contine antetele functiilor auxiliare folosite in rezolvarea
+temei, si acest fisier README.
